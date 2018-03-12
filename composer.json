@@ -1,0 +1,11 @@
+{
+    "require": {
+        "lstrojny/functional-php": "^1.6",
+        "widmogrod/php-functional": "^5.0"
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "dev-master",
+        "phpdocumentor/reflection-docblock": "2.0.5",
+        "phpdocumentor/reflection": "^3.0"
+    }
+}
