@@ -7,5 +7,5 @@ function max2(array $data): int
     }, 0);
 }
 
-
+print_r(max2([12,35,3,7,0,43]));
 

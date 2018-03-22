@@ -1,7 +1,8 @@
 <?php
+// 未运行
 
 require_once(__DIR__ . '/../vendor/autoload.php');
-require('04-curry-2.php');
+require('04-curry.php');
 use function Functional\partial_right;
 
 $filter = curry('filter');

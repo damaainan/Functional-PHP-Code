@@ -1,5 +1,5 @@
 <?php
-
+require_once __DIR__.'/03-maybe-final-1.php';
 $num = Maybe::fromValue(42);
 
 $val = $num->map(function($n) { return $n * 2; })

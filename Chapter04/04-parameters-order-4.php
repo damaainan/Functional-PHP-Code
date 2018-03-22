@@ -1,5 +1,5 @@
 <?php
-require_once('04-curry-2.php');
+require_once('04-curry.php');
 $map = curry(function(array $array, callable $cb) {});
 $take = curry(function(string $string, int $count) {});
 

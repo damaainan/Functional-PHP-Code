@@ -1,9 +1,9 @@
 <?php
+require_once __DIR__.'/../vendor/autoload.php';
 
-use phpDocumentor\Reflection\Types\Context;
+use phpDocumentor\Reflection\Types\Context; // 这些类在当前版本不存在了
 use phpDocumentor\Reflection\FqsenResolver;
 
-require '../vendor/autoload.php';
 
 $fqsenResolver = new FqsenResolver();
 

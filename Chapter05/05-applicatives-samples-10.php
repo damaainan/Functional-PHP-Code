@@ -1,5 +1,5 @@
 <?php
-require_once('05-applicative-5.php');
+require_once('05-applicative.php');
 
 print_r(iterator_to_array(CollectionApplicative::pure([
   function($a) { return $a * 2; },

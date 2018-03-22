@@ -1,5 +1,7 @@
 <?php
 
+require "../vendor/autoload.php";
+use function Functional\compose; //
 // traditional
 function safe_title(string $s)
 {
@@ -9,4 +11,4 @@ function safe_title(string $s)
 // point-free
 $safe_title = compose('htmlspecialchars', 'strtoupper');
 
-
+var_dump($safe_title);

@@ -5,6 +5,7 @@ require '../vendor/autoload.php';
 use FantasyLand\Apply;
 use FantasyLand\Monad;
 
+
 class Reader implements Monad
 {
     const of = 'Monad\Reader::of';

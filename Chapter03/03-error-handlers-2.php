@@ -12,5 +12,6 @@ function max3(array $data)
     }, 0);
 }
 
+print_r(max3([12,35,3,7,0,43]));
 
-
+print_r(max3([]));

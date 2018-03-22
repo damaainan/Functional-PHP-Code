@@ -1,4 +1,8 @@
 <?php
+require_once('06-monadic_helpers.php');
+require_once('06-writer-monad.php');
+use Widmogrod\Monad\Writer;
+use Monad\StringMonoid;
 
 $data = [1, 10, 15, 20, 25];
 

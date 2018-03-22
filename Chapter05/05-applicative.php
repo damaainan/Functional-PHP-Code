@@ -1,5 +1,5 @@
 <?php
-require_once('05-functor-3.php');
+require_once('05-functor.php');
 abstract class Applicative implements Functor
 {
     public abstract static function pure($value): Applicative;
@@ -70,4 +70,35 @@ class CollectionApplicative extends Applicative implements IteratorAggregate
     }
 }
 
+function check_applicative_laws(Applicative $f1, callable $f2, $x)
+{
+    $identity = function($x) { return $x; };
+    $compose = function(callable $a) {
+        return function(callable $b) use($a) {
+            return function($x) use($a, $b) {
+                return $a($b($x));
+            };
+        };
+    };
 
+    $pure_x = $f1->pure($x);
+    $pure_f2 = $f1->pure($f2);
+
+    return [
+        'identity' =>
+            $f1->pure($identity)->apply($pure_x) ==
+            $pure_x,
+        'homomorphism' =>
+            $f1->pure($f2)->apply($pure_x) ==
+            $f1->pure($f2($x)),
+        'interchange' =>
+            $f1->apply($pure_x) ==
+            $f1->pure(function($f) use($x) { return $f($x); })->apply($f1),
+        'composition' =>
+            $f1->pure($compose)->apply($f1)->apply($pure_f2)->apply($pure_x) ==
+            $f1->apply($pure_f2->apply($pure_x)),
+        'map' =>
+            $pure_f2->apply($pure_x) ==
+            $pure_x->map($f2)
+    ];
+}

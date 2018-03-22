@@ -1,4 +1,16 @@
 <?php
+class User {
+    public function phone(): string
+    {
+        return '';
+    }
+
+    public function registration_date(): DateTime
+    {
+        return new DateTime();
+    }
+}
+
 
 function getLastMonthUserPhones($users)
 {
@@ -12,5 +24,7 @@ function getLastMonthUserPhones($users)
     return $return;
 }
 
+$users = [new User(), new User(), new User()];
 
 
+var_dump(getLastMonthUserPhones($users));

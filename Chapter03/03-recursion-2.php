@@ -14,7 +14,7 @@ function hanoi(int $disc, string $source, string $destination, string $via)
     }
 }
 
-
+hanoi(3,"left","left","right");
 
 // Move a disc from the left rod to the right rod
 // Move a disc from the left rod to the middle rod

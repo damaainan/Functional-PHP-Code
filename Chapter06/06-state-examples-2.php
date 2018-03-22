@@ -1,4 +1,7 @@
 <?php
+require '../vendor/autoload.php';
+use Monad\State as s;
+use Functional as f;
 
 function randomInt()
 {

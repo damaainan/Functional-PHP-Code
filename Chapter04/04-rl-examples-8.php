@@ -1,4 +1,7 @@
 <?php
+
+// 未运行
+// 
 require_once(__DIR__ . '/../vendor/autoload.php');
 use function Functional\sort;
 use function Functional\compare_on;

@@ -9,5 +9,20 @@ function getUserPhonesFromDate($limit, $users)
     }));
 }
 
+class User {
+    public function phone(): string
+    {
+        return '';
+    }
 
+    public function registration_date(): DateTime
+    {
+        return new DateTime();
+    }
+}
 
+$users = [new User(), new User(), new User()];
+
+$limit = (new DateTime("-30 days"))->getTimestamp();
+
+var_dump(getUserPhonesFromDate($limit, $users));

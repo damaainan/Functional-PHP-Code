@@ -20,7 +20,10 @@ function unzip(array $data): array
 $numerals = [1, 2, 3, 4];
 $english = ['one', 'two'];
 $french = ['un', 'deux', 'trois'];
-$zipped = array_map(null, $numerals, $english, $french);
+$zipped = array_map(null, $numerals, $english, $french); // 将多个数组合并  按最大长度组合 ，相应位置没有为空
+
+print_r($zipped);
+
 
 list($numerals2, $english2, $french2) = unzip($zipped);
 
@@ -31,4 +34,5 @@ var_dump($english == $english2);
 var_dump($french == $french2);
 // bool(true)
 
+print_r(unzip($zipped));
 

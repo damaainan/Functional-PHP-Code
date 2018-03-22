@@ -1,5 +1,5 @@
 <?php
-require_once('04-curry-2.php');
+require_once('04-curry.php');
 $map = curry_n(2, 'array_map');
 $filter = curry_n(2, 'array_filter');
 $trim = $map('trim');

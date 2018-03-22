@@ -1,5 +1,5 @@
 <?php
-require_once('05-applicative-5.php');
+require_once('05-applicative.php');
 require '../vendor/autoload.php';
 use function Functional\group;
 

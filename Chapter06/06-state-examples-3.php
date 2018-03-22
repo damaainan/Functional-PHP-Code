@@ -1,5 +1,9 @@
 <?php
 
+require '../vendor/autoload.php';
+use Monad\State as s;
+use Functional as f;
+
 function getUser($id, $current = [])
 {
     return f\curryN(2, function($id, $current) {

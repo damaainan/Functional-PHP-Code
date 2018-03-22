@@ -1,5 +1,5 @@
 <?php
-require_once('05-applicative-4.php');
+require_once('05-applicative.php');
 abstract class Monad extends Applicative
 {
     public static function return($value): Monad

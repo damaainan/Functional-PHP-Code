@@ -1,5 +1,5 @@
 <?php
-require_once('05-applicative-4.php');
+require_once('05-applicative.php');
 print_r(check_applicative_laws(
     IdentityApplicative::pure('strtoupper'),
     'trim',

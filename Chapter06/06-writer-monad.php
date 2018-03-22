@@ -1,5 +1,32 @@
 <?php
+namespace Monad;
 
+require './vendor/autoload.php';
+use Widmogrod\Common;
+use FunctionalPHP\FantasyLand\Apply;
+use FunctionalPHP\FantasyLand\Monad;
+use FunctionalPHP\FantasyLand\Monoid;
+use FunctionalPHP\FantasyLand\Semigroup;
+
+class StringMonoid implements Monoid
+{
+    private $value;
+    public function __construct($s) {
+        $this->value = $s;
+    }
+
+    public function getEmpty() {
+        return '';
+    }
+
+    public function get() {
+        return $this->value;
+    }
+
+    public function concat1(Semigroup $value) {
+        return new static($this->value . $value->get());
+    }
+}
 class Writer implements Monad
 {
     const of = 'Monad\Writer::of';

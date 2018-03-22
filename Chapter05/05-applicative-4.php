@@ -1,5 +1,5 @@
 <?php
-require_once('05-functor-3.php');
+require_once('05-functor.php');
 abstract class Applicative implements Functor
 {
     public abstract static function pure($value): Applicative;

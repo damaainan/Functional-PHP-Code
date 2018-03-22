@@ -7,12 +7,28 @@ use function Functional\partial_method;
 function getUserPhonesFromDate2($limit, $users)
 {
     return map(
-        filter(function(User $u) use($limit) {
+        filter($users, function(User $u) use($limit) { // 原代码 filter 参数给错了
             return $u->registration_date()->getTimestamp() > $limit;
-        }, $users),
+        }),
         partial_method('phone')
     );
 }
 
 
+class User {
+    public function phone(): string
+    {
+        return '';
+    }
 
+    public function registration_date(): DateTime
+    {
+        return new DateTime();
+    }
+}
+
+$users = [new User(), new User(), new User()];
+
+$limit = (new DateTime("-30 days"))->getTimestamp();
+
+var_dump(getUserPhonesFromDate2($limit, $users));

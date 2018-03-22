@@ -6,4 +6,4 @@ function max3(array $data): int
 }
 
 
-
+echo max3([5, 10, 23, 1, 0]);
