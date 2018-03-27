@@ -1,7 +1,9 @@
 {
     "require": {
         "lstrojny/functional-php": "^1.6",
-        "widmogrod/php-functional": "^5.0"
+        "widmogrod/php-functional": "^5.0",
+        "functional-php/trampoline": "^1.1",
+        "functional-php/pattern-matching": "^0.3.1"
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "dev-master",

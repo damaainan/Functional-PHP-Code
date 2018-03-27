@@ -1,5 +1,5 @@
 <?php
-
+require "../vendor/autoload.php";
 use FunctionalPHP\PatternMatching as m;
 
 $users = [

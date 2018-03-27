@@ -5,10 +5,11 @@ const increment = 'increment';
 function increment(int $i) { return $i + 1; }
 
 // using a 'callable'
-array_map([1, 2, 3, 4], 'increment');
-
+$arr = array_map('increment',[1, 2, 3, 4]);
+print_r($arr);
 // using our const
-array_map([1, 2, 3, 4], increment);
+$arr = array_map(increment,[1, 2, 3, 4]);
 
 
 
+print_r($arr);

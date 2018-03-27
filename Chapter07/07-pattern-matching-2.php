@@ -1,4 +1,14 @@
 <?php
+require "../vendor/autoload.php";
+use FunctionalPHP\PatternMatching as m;
+
+$users = [
+    [ 'name' => 'Gilles', 'status' => 10 ],
+    [ 'name' => 'John', 'status' => 5 ],
+    [ 'name' => 'Ben', 'status' => 0],
+    [],
+    'some random string'
+];
 
 $group_names = [ 10 => 'admin', 5 => 'moderator' ];
 

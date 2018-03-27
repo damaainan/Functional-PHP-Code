@@ -2,7 +2,7 @@
 
 require_once('06-monadic_helpers.php');
 require '../vendor/autoload.php';
-use Monad\Collection;
+use Monad\Collection; // collection 类不存在 需要想办法替换
 use Functional as f;
 
 $powerset = filterM(function($x) {

@@ -9,5 +9,6 @@ function fact2($n)
     return $fact($n, 1);
 }
 
-
+$ret = fact2(5);
+echo $ret;
 

@@ -1,5 +1,5 @@
 <?php
-
+require "../vendor/autoload.php";
 use Functional as f;
 
 class Position
