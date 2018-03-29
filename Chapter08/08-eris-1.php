@@ -1,5 +1,5 @@
 <?php
-
+require "../vendor/autoload.php"
 use Eris\Generator;
 
 class ArrayReverseTest extends \PHPUnit_Framework_TestCase

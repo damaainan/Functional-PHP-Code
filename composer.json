@@ -3,7 +3,12 @@
         "lstrojny/functional-php": "^1.6",
         "widmogrod/php-functional": "^5.0",
         "functional-php/trampoline": "^1.1",
-        "functional-php/pattern-matching": "^0.3.1"
+        "functional-php/parallel": "dev-master",
+        "functional-php/pattern-matching": "^0.3.1",
+        "steos/php-quickcheck": "dev-master",
+        "giorgiosironi/eris": "^0.10.0",
+        "oefenweb/statistics": "^1.1",
+        "php-amqplib/php-amqplib": "^2.7"
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "dev-master",

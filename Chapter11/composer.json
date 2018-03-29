@@ -1,0 +1,6 @@
+{
+    "require": {
+        "rx/stream": "^3.0",
+        "voryx/pgasync": "^2.0"
+    }
+}

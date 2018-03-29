@@ -1,8 +1,9 @@
 <?php
-
+require './vendor/autoload.php';
 use \React\EventLoop\StreamSelectLoop;
 use \Rx\Observable;
 use \Rx\Scheduler\EventLoopScheduler;
+use \Rx\Observer\CallbackObserver;
 
 // Those are needed in order to create a timed interval
 $loop = new StreamSelectLoop();

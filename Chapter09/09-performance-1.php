@@ -1,5 +1,5 @@
 <?php
-
+require "../vendor/autoload.php";
 use Functional as f;
 
 function add($a, $b)
@@ -31,5 +31,5 @@ $composedAdd4 = f\compose('add2', 'add2');
 
 $composerCurryedAdd = f\compose($curryiedAdd(2), $curryiedAdd(2));
 
-
+// var_dump($composerCurryedAdd);
 

@@ -1,5 +1,5 @@
 <?php
-
+require_once '../vendor/autoload.php';
 use PhpAmqpLib\Message\AMQPMessage;
 
 $queue_name = '';
