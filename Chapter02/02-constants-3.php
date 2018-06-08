@@ -1,4 +1,5 @@
 <?php
+define('UPPERCASE', strtoupper('Hello World !'));
 
 echo UPPERCASE;
 // display 'HELLO WORLD !'
